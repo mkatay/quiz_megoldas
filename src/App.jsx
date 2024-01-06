@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { CssBaseline, Box, Container } from "@mui/material";
 import { lightBlue } from "@mui/material/colors";
-
+import { Typography } from '@mui/material';
 import QuestionCard from "./components/QuestionCard";
 import Result from "./components/Result";
 
@@ -48,8 +48,9 @@ const restartQuiz = () => {
       <CssBaseline />
       <Box sx={{
         backgroundColor: lightBlue[500],
-        height: "100vh", display: "flex", alignItems: "center"
+        height: "100vh", display: "flex",flexWrap:'wrap', justifyContent:'center',
       }}>
+        <Typography sx={{width:'100%',fontSize:'2rem',color:'white',textAlign:'center'}}>Quiz Game</Typography>
         <Container maxWidth="sm">
           {gameState && !gameState.finishedQuiz && 
           <QuestionCard {...gameState.currentQuestion} 

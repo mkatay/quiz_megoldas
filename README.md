@@ -8,7 +8,11 @@ A alábbi linken találhatóak egy quiz létrehozásához szükséges adatok az 
 Adva van a projekt forrás strukturája, az alábbi linken:
 [Forrás- React-Vite project](https://github.com/mkatay/quiz_forras)
 
-A forrásmappában egy **Quiz.class.js** fájl. A fájlban található osztályban minden szükséges attribútum, metódus, függvény megtalálható a  quiz logikájának a megvalósításáshoz! Ezt használva valósítsuk meg a minta szerinti quiz alkalmazást!
+A forrásmappában egy **Quiz.class.js** fájl van. A fájlban található osztályban minden szükséges attribútum, metódus, függvény megtalálható a  quiz logikájának a megvalósításáshoz! 
+- Az App.jsx komponensben létrehozott **quiz** state a komponens betöltődésekor kapja meg az adatokat tartalmazó tömböt használva az **axios** vagy a **fetch** apit.
+- Az App.jsx-ben létrehozott **gameState** state az aktuális állapotot kell tükrözze. A komponens betöltődésekor inicializáld példányosítással a megadott **Quiz** osztályból.
+
+Ezt használva valósítsd meg a minta szerinti quiz alkalmazást!
 
 ![minta1](./src/assets/minta1.png)
 ![minta1](./src/assets/minta2.png)
